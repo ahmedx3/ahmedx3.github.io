@@ -1,18 +1,49 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app dark="">
+      <v-row>
+        <v-col  xs="12" sm="6" md="6" lg="6"
+          v-for="x in Fields" :key="x">
+          <category-card :images=x.image
+          :name=x.name></category-card>
+        </v-col>
+      </v-row>
+  </v-app>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue';
+import CategoryCard from '../components/CategoryCard.vue';
 
 export default {
-  name: 'Home',
+  data() {
+    return {
+      webImage: 'https://blog.hotmart.com/blog/2020/03/BLOG_web-design-1.png',
+      Fields: [
+        {
+          image: 'https://www.sapphirewebsolutions.com/wp-content/uploads/2019/09/Web-Development-Trends.jpg',
+          name: 'Web Development',
+        },
+        {
+          image: 'https://instabug.com/blog/wp-content/uploads/2017/09/Featured.jpg',
+          name: 'Game Development',
+        },
+      ],
+    };
+  },
+  methods: {
+    test() {
+      // eslint-disable-next-line no-console
+      console.log('test');
+    },
+  },
   components: {
-    HelloWorld,
+    CategoryCard,
   },
 };
 </script>
+
+<style scoped>
+.col {
+    margin: 0;
+    padding: 0;
+}
+</style>
