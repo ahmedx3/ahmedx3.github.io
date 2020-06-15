@@ -4,7 +4,7 @@
         <v-col  xs="12" sm="6" md="6" lg="6"
           v-for="x in Fields" :key="x">
           <category-card :images=x.image
-          :name=x.name></category-card>
+          :name=x.name :myRoute=x.route></category-card>
         </v-col>
       </v-row>
   </v-app>
@@ -21,19 +21,17 @@ export default {
         {
           image: 'https://www.sapphirewebsolutions.com/wp-content/uploads/2019/09/Web-Development-Trends.jpg',
           name: 'Web Development',
+          route: '/webdev',
         },
         {
           image: 'https://instabug.com/blog/wp-content/uploads/2017/09/Featured.jpg',
           name: 'Game Development',
+          route: '/gamedev',
         },
       ],
     };
   },
   methods: {
-    test() {
-      // eslint-disable-next-line no-console
-      console.log('test');
-    },
   },
   components: {
     CategoryCard,

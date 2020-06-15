@@ -6,7 +6,7 @@
         @mouseover="overlay=true" @mouseout="overlay=false" @click="test()"
       >
         <v-overlay v-show="overlay" absolute >
-          <v-btn large="">{{name}}</v-btn>
+          <v-btn large="" :to="myRoute">{{name}}</v-btn>
         </v-overlay>
       </v-img>
   </v-card>
@@ -22,6 +22,7 @@ export default {
   props: {
     images: String,
     name: String,
+    myRoute: String,
   },
   methods: {
     test() {
