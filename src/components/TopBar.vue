@@ -1,7 +1,7 @@
 <template>
   <v-app-bar
       color="#c70039"
-      dark app=""
+      dark app="" hide-overlay
       >
       <v-toolbar-title class="font-weight-light ml-5">Ahmed</v-toolbar-title>
       <v-toolbar-title class="font-weight-bold">Mostafa</v-toolbar-title>
