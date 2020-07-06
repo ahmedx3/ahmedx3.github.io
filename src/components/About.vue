@@ -2,10 +2,10 @@
   <div id="myAbout">
       <v-container fill-height>
           <v-row>
-              <v-col lg="4">
+              <v-col cols="4" lg="4" md="4" sm="4" >
                   <v-img src="../assets/Ahmed.jpg"></v-img>
               </v-col>
-              <v-col lg="8">
+              <v-col cols="8" lg="8" md="8" sm="8">
                   <h1 class="display-3 font-weight-black">A Little About</h1>
                   <h1 class="display-3 font-weight-black">Myself.</h1>
                   <h1 class="headline my-12">
