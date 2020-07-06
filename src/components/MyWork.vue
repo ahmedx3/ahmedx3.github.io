@@ -41,6 +41,9 @@
                    :description="card.description"></WorkCard>
           </v-row>
       </v-container>
+
+      <v-divider></v-divider>
+
   </div>
 </template>
 

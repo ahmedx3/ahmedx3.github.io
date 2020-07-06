@@ -9,7 +9,7 @@
       <v-btn outlined="" class="mx-3" @click="$vuetify.goTo('#myIntro', options)">Home</v-btn>
       <v-btn outlined="" class="mx-3" @click="$vuetify.goTo('#myAbout', options)">About</v-btn>
       <v-btn outlined="" class="mx-3" @click="$vuetify.goTo('#myWork', options)">My Work</v-btn>
-      <v-btn outlined="" class="mx-3">Contact</v-btn>
+      <v-btn outlined="" class="mx-3" @click="$vuetify.goTo('#myContact', options)">Contact</v-btn>
     </v-app-bar>
 </template>
 
