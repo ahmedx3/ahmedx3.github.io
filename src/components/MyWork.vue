@@ -62,6 +62,13 @@ export default {
           image: 'presentationVR.png',
         },
         {
+          name: 'Hanitizer',
+          brief: 'A room scale virtual realty experience made for African Hackathon 2020 that increase the awareness of the importance of covid precautionary measures through an interactive game.',
+          youtubeID: '4obeP6v67yw',
+          description: 'A room scale virtual realty experience made for African Hackathon 2020 that increase the awareness of the importance of covid precautionary measures through an interactive game.',
+          image: 'Hanitizer.png',
+        },
+        {
           name: 'SpaceZombi',
           brief: 'A google cardboard game where the player shoot zombies at space using 2 different types of weapons.',
           youtubeID: 'uHDU6uR5hpA',
